@@ -23,10 +23,10 @@ function Head() {
       </Row>
 
       <Row>
-        <Col md={3} className="d-none d-md-block" ><button className='btnNav leftBtn Btn'>Nos Voyages</button> </Col>
-        <Col md={3} className="d-none d-md-block" ><button className='btnNav leftBtn Btn'>Nos Services</button> </Col>
-        <Col md={3} className="d-none d-md-block" ><button className='btnNav rightBtn Btn'>Nous Contacter</button> </Col>
-        <Col md={3} className="d-none d-md-block" ><button className='btnNav rightBtn Btn'>Bien se préparer</button> </Col>
+        <Col md={3} className="d-none d-md-block" ><button className='btnNav leftBtn Btn' onClick={() => { window.location.href = "/travels" }}>Nos Voyages</button> </Col>
+        <Col md={3} className="d-none d-md-block" ><button className='btnNav leftBtn Btn' onClick={() => { window.location.href = "/services" }}>Nos Services</button> </Col>
+        <Col md={3} className="d-none d-md-block" ><button className='btnNav rightBtn Btn' onClick={() => { window.location.href = "/contact" }}>Nous Contacter</button> </Col>
+        <Col md={3} className="d-none d-md-block" ><button className='btnNav rightBtn Btn' onClick={() => { window.location.href = "/prepare" }}>Bien se préparer</button> </Col>
       </Row>
         </div>
     )

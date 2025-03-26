@@ -5,6 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Login from './pages/login';
+import Travels from './pages/travels';
+import Services from './pages/services';
+import Contact from './pages/contact';
+import Prepare from './pages/prepare';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +17,11 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/travels" element={<Travels />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/prepare" element={<Prepare />} />
+
       </Routes>
     </Router>
   

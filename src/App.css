@@ -43,6 +43,16 @@ body {
 
     height: 30px;
     margin-right: 25px;
+    color: orange;
+    transition: 250ms ease-in-out;
+
+}
+
+.svg:hover {
+    color: rgb(148, 102, 255);
+    transform: scale(1.1);
+    box-shadow: 0 0px 35px rgb(148, 102, 255);
+    border-radius: 200px;
 }
 
 .btnNav {
@@ -164,7 +174,7 @@ hr {
     margin-left: 15%;
     margin-right: 15%;
     border-radius: 15px;
-    border: 25px solid rgba(255, 255, 255, 0.3);
+    border: 15px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0px 250px rgb(149, 2, 255);
     transition: 250ms ease;
@@ -174,6 +184,31 @@ hr {
     box-shadow: 0 0px 15px rgb(255, 255, 255), 0 0px 70px rgb(149, 2, 255);
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+.mainTextMobile{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 15px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0px 250px rgb(149, 2, 255);
+    transition: 250ms ease;
+}
+
+.mainText:hover {
+    box-shadow: 0 0px 15px rgb(255, 255, 255), 0 0px 70px rgb(149, 2, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
 
 h1 {
     font-size: 50px;;
@@ -280,6 +315,9 @@ h1 {
 
 .navbar-links {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .navbar-link {
     padding: 0 0.3;
@@ -296,4 +334,80 @@ h1 {
 
 .button-desktop {
     size:30px;
+}
+
+
+
+.btnMenu {
+    margin-bottom: 10px;
+    width: 180px;
+    padding: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 3px solid orange;
+}
+
+.searchBar {
+    margin-bottom: 150px;
+
+    width: 200px;
+    padding: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 3px solid orange;
+}
+
+.divider {
+    background-color: tomato;
+}
+
+.formCase {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.manualContact{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: space-between; /* Space them evenly */
+    height: 65%; /* Adjust height based on your needs */
+  
+}
+
+.toggleBtn {
+    background-color: orange;
+    border: 1px solid #aaa;
+    border-radius: 99px;
+    width: 50px;
+    height: 28px;
+    transition: background-color 0.1s ease, border-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+    position:relative;
+}
+
+.toggleBtn .thumb {
+height: 20px;
+width: 20px;
+background-color: rgb(255, 255, 255);
+border-radius: 99px;
+transform: translateX(0px);
+transition: left 0.15s ease;
+position: absolute;
+top: 50%;
+left: 3px;
+transform: translateY(-50%);
+
+}
+
+.toggleBtn.toggled {
+    background-color: rgb(120, 74, 151);
+}
+
+.toggleBtn.toggled .thumb {
+    left: 25px;
+}
+
+.titleLog {
+    font-size: 40px;
 }
